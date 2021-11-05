@@ -53,6 +53,9 @@ body {
 .content .center-align {
   text-align: center;
 }
+.content .right-align {
+  text-align: right;
+}
 .content .accent1 {
   color: #555;
 }
@@ -61,6 +64,21 @@ body {
 }
 .content .accent3 {
   color: #666;
+}
+
+.content .current-position {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.content .current-position .contacts {
+  text-align: end;
+}
+
+.content .contacts > * {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
 }
 
 @media print {
@@ -72,6 +90,10 @@ body {
   .content {
     padding: 0;
     max-width: none;
+  }
+
+  .contacts {
+    display: none;
   }
 }
 
