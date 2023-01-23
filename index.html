@@ -52,8 +52,8 @@
       <h3>Software Engineer - Frontend</h3>
       <p>Datadog &#x2027; Full-time</p>
       <p class="accent3">
-        <span id="dd-timeframe">Jul 2020 - Present &#x2027; </span><br />
-        Paris, France
+        <span id="dd-timeframe">Jul 2020 - Present </span>
+        <span>&#x2027; Paris, France </span>
       </p>
       <ul>
         <li>
@@ -78,8 +78,8 @@
       <h3>Software Developer - Frontend</h3>
       <p>Rawfish industries &#x2027; Full-time</p>
       <p class="accent3">
-        <span id="rawfish-timeframe">Apr 2016 - Jul 2020 &#x2027; </span><br />
-        Vicenza / Milan, Italy
+        <span id="rawfish-timeframe">Apr 2016 - Jul 2020 </span>
+        <span>&#x2027; Vicenza, Italy </span>
       </p>
       <ul>
         <li>
@@ -102,8 +102,8 @@
       <h3>Software Developer Intern</h3>
       <p>Zextras &#x2027; Internship</p>
       <p class="accent3">
-        <span id="zextras-timeframe">Sep 2015 - Feb 2016 &#x2027; </span><br />
-        Vicenza, Italy
+        <span id="zextras-timeframe">Sep 2015 - Feb 2016 </span>
+        <span>&#x2027; Vicenza, Italy </span>
       </p>
       <p>
         Worked on the conversion of the company's software setup bash script
@@ -123,7 +123,7 @@
         const months = Math.ceil(diff / MONTH) % 12;
         if (years) slices.push(`${years}yrs`);
         if (months) slices.push(`${months}mos`);
-        return slices.join(", ");
+        return `(${slices.join(", ")})`;
       };
 
       document
