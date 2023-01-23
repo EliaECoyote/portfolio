@@ -26,7 +26,7 @@
     <div class="current-position">
       <div></div>
 
-      <p>Frontend Engineer - Paris</p>
+      <p>Software Engineer - Paris</p>
 
       <div class="contacts">
         <a href="https://www.linkedin.com/in/eliacamposilvan/" target="_blank">
@@ -52,7 +52,7 @@
       <h3>Software Engineer - Frontend</h3>
       <p>Datadog &#x2027; Full-time</p>
       <p class="accent3">
-        Jul 2020 - Present &#x2027; 2yr<br />
+        <span id="dd-timeframe">Jul 2020 - Present &#x2027; </span><br />
         Paris, France
       </p>
       <ul>
@@ -77,7 +77,7 @@
       <h3>Software Developer - Frontend</h3>
       <p>Rawfish industries &#x2027; Full-time</p>
       <p class="accent3">
-        Apr 2016 - Jul 2020 &#x2027; 4yrs 4mos<br />
+        <span id="rawfish-timeframe">Apr 2016 - Jul 2020 &#x2027; </span><br />
         Vicenza / Milan, Italy
       </p>
       <ul>
@@ -88,8 +88,9 @@
         </li>
         <li>
           Developed deep knowledge on the web basics: Optimization of code &
-          assets delivery, Progressive enhancement, CDNs, Caching, Compression,
-          Lazy loading, Accessibility, Responsive and scalable designs
+          assets delivery, Progressive enhancement, CDNs, Caching,
+          Compression, Lazy loading, Accessibility, Responsive and scalable
+          designs
         </li>
         <li>Successfully leaded team with 2 other FE engineers</li>
         <li>Experience with solving UI App memory and performance issues</li>
@@ -100,18 +101,42 @@
       <h3>Software Developer Intern</h3>
       <p>Zextras &#x2027; Internship</p>
       <p class="accent3">
-        Sep 2015 - Feb 2016 &#x2027; 6mos<br />
+        <span id="zextras-timeframe">Sep 2015 - Feb 2016 &#x2027; </span><br />
         Vicenza, Italy
       </p>
       <p>
         Worked on the conversion of the company's software setup bash script
         to a java application. Experience with Java develoment, OOP and
         automated testing.
-        <!-- Learned programming basics, including java development, OOP, and -->
-        <!-- automated testing. Responsible for the conversion of the company's -->
-        <!-- software setup bash script to a java application. -->
       </p>
     </section>
+
+    <script>
+      const getTimeFrameDesc = (from, to) => {
+        const diff = to - from;
+        const DAY = 1000 * 60 * 60 * 24;
+        const YEAR = 365 * DAY;
+        const MONTH = 30 * DAY;
+        const slices = [];
+        const years = Math.floor(diff / YEAR);
+        const months = Math.ceil(diff / MONTH) % 12;
+        if (years) slices.push(`${years}yrs`);
+        if (months) slices.push(`${months}mos`);
+        return slices.join(", ");
+      };
+
+      document
+        .getElementById("dd-timeframe")
+        .append(getTimeFrameDesc(new Date("Jul 2020"), new Date()));
+
+      document
+        .getElementById("rawfish-timeframe")
+        .append(getTimeFrameDesc(new Date("Apr 2016"), new Date("Jul 2020")));
+
+      document
+        .getElementById("zextras-timeframe")
+        .append(getTimeFrameDesc(new Date("Sep 2015"), new Date("Feb 2016")));
+    </script>
 
     <section>
       <span class="bar"></span>
@@ -161,10 +186,10 @@
       <ul>
         <li>
           Languages:
-          <b>typescript, javascript, java, reasonml, lua, swift</b>
+          <b>typescript, javascript, python, java, reasonml, lua, swift</b>
         </li>
         <li>Web frameworks: <b>react, lit-element, vue</b></li>
-        <li>Bundling tools: <b>webpack, rollup</b></li>
+        <li>Bundling tools: <b>webpack, rollup, esbuild</b></li>
         <li>JAMstack: <b>gatsby, nuxt, jekyll</b></li>
         <li>Testing frameworks: <b>jest, cypress, RTL</b></li>
         <li>
