@@ -66,12 +66,29 @@
 
       <section>
         <h2 class="accent2">Experience</h2>
-        <h3>Software Engineer - Frontend</h3>
-        <p>Datadog &#x2027; Full-time</p>
+        <h3>Datadog</h3>
         <p class="accent3">
           <span id="dd-timeframe">Jul 2020 - Present </span>
-          <span>&#x2027; Paris, France </span>
+          <br />
+          <span>Paris, France</span>
         </p>
+        <div class="roles">
+          <div class="role">
+            <h4>Senior Software Engineer - Frontend</h4>
+            <p>Full-time</p>
+            <p class="accent3">
+              <span id="dd-timeframe-senior-eng">Mar 2023 - Present </span>
+            </p>
+          </div>
+          <br />
+          <div class="role">
+            <h4>Software Engineer - Frontend</h4>
+            <p>Full-time</p>
+            <p class="accent3">
+              <span id="dd-timeframe-eng">Jul 2020 - Mar 2023 </span>
+            </p>
+          </div>
+        </div>
         <ul>
           <li>
             Designed and developed TS libraries: type-safe type-guards, form
@@ -96,7 +113,8 @@
         <p>Rawfish industries &#x2027; Full-time</p>
         <p class="accent3">
           <span id="rawfish-timeframe">Apr 2016 - Jul 2020 </span>
-          <span>&#x2027; Vicenza, Italy </span>
+          <br />
+          <span>Vicenza, Italy</span>
         </p>
         <ul>
           <li>
@@ -120,7 +138,8 @@
         <p>Zextras &#x2027; Internship</p>
         <p class="accent3">
           <span id="zextras-timeframe">Sep 2015 - Feb 2016 </span>
-          <span>&#x2027; Vicenza, Italy </span>
+          <br />
+          <span>Vicenza, Italy</span>
         </p>
         <p>
           Worked on the conversion of the company's software setup bash script
@@ -140,7 +159,7 @@
           const months = Math.ceil(diff / MONTH) % 12;
           if (years) slices.push(`${years}yrs`);
           if (months) slices.push(`${months}mos`);
-          return `(${slices.join(", ")})`;
+          return `‧ ${slices.join(", ")}`;
         };
 
         document
@@ -154,6 +173,14 @@
         document
           .getElementById("zextras-timeframe")
           .append(getTimeFrameDesc(new Date("Sep 2015"), new Date("Feb 2016")));
+
+        document
+          .getElementById("dd-timeframe-senior-eng")
+          .append(getTimeFrameDesc(new Date("Mar 2023"), new Date()));
+
+        document
+          .getElementById("dd-timeframe-eng")
+          .append(getTimeFrameDesc(new Date("Jul 2020"), new Date("Mar 2023")));
       </script>
 
       <section>
