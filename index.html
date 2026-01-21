@@ -74,26 +74,27 @@
         </p>
         <ul>
           <li>
-            Led engineering efforts and project planning, successfully
-            delivering several critical product features, including 2
-            cross-product initiatives. Identified milestones, led stakeholder
-            discussions, provided extensive feedback on designs and product
-            briefs, and wrote formal engineering RFCs for implementation.
+            Drove 4 cross-product initiatives by authoring RFCs and defining API
+            contracts, coordinating safe rollouts on reliability-sensitive
+            services.
           </li>
           <li>
-            Created typescript libraries to improve FE devx company-wide,
-            including a type-safe type-guards builder, a form validation
-            toolkit, and functional-programming operators to provide a safe and
-            streamlined syntax for combining & mapping async query results
-            within React components.
+            Built and evolved log processors (new processors + expanded
+            coverage), improving threat-intelligence log enrichment and
+            enforcing strict schema-validated processing.
           </li>
+          <li>
+            Operated the core Kafka-based MapReduce engine powering the security
+            product, introducing a new derived event stream to enable risk
+            scoring; improved stability via alert tuning and incident response.
+          </li>
+          <!-- Add item about trino or something like that-->
           <li>
             Proposed, led and shipped engineering initiatives:
             <ul>
               <li>
-                Improve product configuration page to prompt users to setup more
-                log sources to analyze through our SIEM product, greatly
-                increasing our revenue.
+                Drove a ~35% MoM increase in organizations with correctly
+                configured SIEM log sources by improving the configuration flow.
               </li>
               <li>Introduce admin panel for streamlined admin operations.</li>
               <li>
@@ -101,10 +102,6 @@
                 reduce flakiness, and cut test run durations by 25%.
               </li>
             </ul>
-          </li>
-          <li>
-            Championed an "ops" culture by introducing client-side error
-            monitors, and by documenting and presenting triaging workflows.
           </li>
           <li>
             Extensive engineer mentorship, involving formal training for 7 new
@@ -118,35 +115,41 @@
         <p>Rawfish industries &#x2027; Full-time</p>
         <p class="accent3">
           <span id="rawfish-timeframe">Apr 2016 - Jul 2020 </span>
-          <span>&#x2027; Vicenza, Italy </span>
+          <span>&#x2027; Italy </span>
         </p>
         <ul>
           <li>
-            Developed and delivered 10 complex web applications with React, Vue,
-            Web components, Server Side Rendering, JAMstack frameworks
+            Led team of 2 engineers and drove development of a video streaming
+            web application (~13M sessions/month).
           </li>
           <li>
-            Developed deep knowledge on the web basics: Optimization of code &
-            assets delivery, Progressive enhancement, CDNs, Caching,
-            Compression, Lazy loading, Accessibility, Responsive and scalable
-            designs
+            Diagnosed and fixed memory leaks and performance issues through heap
+            snapshots / performance profiling. Introduced guardrails to prevent
+            regressions.
           </li>
-          <li>Successfully leaded team with 2 other FE engineers</li>
-          <li>Experience with solving UI App memory and performance issues</li>
-          <li>Experience with jest unit tests</li>
+          <li>
+            Built automated performance monitoring (Node.js + Puppeteer +
+            Lighthouse) to track KPIs over time and detect regressions in CI/CD.
+          </li>
+          <li>
+            Reduced node SSR service docker image size by 3.5&#x00D7; using
+            multi-stage builds, improving build times and deployment efficiency.
+          </li>
+          <li>
+            Improved <i>First Meaningful Paint</i> by 4x and SEO by introducing
+            and operating Server-Side Rendering via ReactDOMServer.
+          </li>
         </ul>
-        <br />
 
         <h3>Software Engineer Intern</h3>
         <p>Zextras &#x2027; Internship</p>
         <p class="accent3">
           <span id="zextras-timeframe">Sep 2015 - Feb 2016 </span>
-          <span>&#x2027; Vicenza, Italy </span>
+          <span>&#x2027; Italy </span>
         </p>
         <p>
-          Worked on the conversion of the company's software setup bash script
-          to a java application. Experience with Java development, OOP and
-          automated testing.
+          Worked on porting the company's software setup to a more maintainable
+          java application. Experience with Java development, OOP and TDD.
         </p>
       </section>
 
@@ -182,53 +185,36 @@
       </script>
 
       <section>
-        <span class="bar"></span>
-        <h2 class="accent2">Projects</h2>
-        <p>
-          <b>Mediaset play</b>, the main italian private television operator
-          platform, hundred of thousands of users.
-        </p>
-        <ul>
-          <li>
-            Reduced initial payload size by 70% by introducing lazy loading with
-            Intersection observers and Dynamic imports chunking
-          </li>
-          <li>
-            Improved FMP by 4x and SEO through Server Side Rendering
-            (ReactDOMServer api)
-          </li>
-          <li>
-            Implemented automated performance tracking through Node, Puppeteer
-            and Lighthouse
-          </li>
-          <li>
-            Improved Docker SSR image size by 3.5x through docker multistage
-            build feature
-          </li>
-          <li>Solved 3 memory leaks through heap memory analysis</li>
-        </ul>
-      </section>
-
-      <section>
         <h2 class="accent2">Skills</h2>
         <ul>
           <li>
             Languages:
+            <b>Go, Java, Python, SQL, Javascript/Typescript</b>
+          </li>
+          <li>
+            Backend:
             <b
-              >typescript, javascript, python, java, go, reasonml, lua, swift</b
+              >Microservices, REST APIs, gRPC, Event-Driven architecture, Stream
+              processing</b
             >
           </li>
-          <li>Web frameworks: <b>react, lit-element, vue</b></li>
-          <li>Bundling tools: <b>webpack, rollup, esbuild</b></li>
-          <li>JAMstack: <b>gatsby, nuxt, jekyll</b></li>
-          <li>Testing frameworks: <b>jest, cypress, RTL</b></li>
           <li>
-            Other:
+            Infrastructure / Delivery:
             <b
-              >reactive programming, functional programming, redux, docker, yarn
-              workspaces & lerna, CI/CD pipelines (gcloudbuild, gitlab ci,
-              github actions, travis), react-native, BE systems and patterns</b
+              >Kubernetes, Docker, Terraform, CI/CD (GitLab CI, Google Cloud
+              Build)</b
             >
+          </li>
+          <li>
+            Databases/Execution engines: <b>PostgreSQL, MongoDB, Trino</b>
+          </li>
+          <li>
+            Observability:
+            <b>monitoring, alerting, dashboards, incident triage</b>
+          </li>
+          <li>
+            Testing:
+            <b>Testify, Gomock, JUnit, AssertJ, Pytest, end-to-end testing</b>
           </li>
         </ul>
       </section>
